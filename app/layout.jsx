@@ -6,7 +6,7 @@ import Provider from "@components/Provider";
 const RootLayout = ({ children }) => (
   <html lang="en">
     <body>
-      <body>
+      <Provider>
         <div className="main">
           <div className="gradient" />
         </div>
@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => (
           <Nav />
           {children}
         </main>
-      </body>
+      </Provider>
     </body>
   </html>
 );
